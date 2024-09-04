@@ -16,11 +16,23 @@ body {
     margin: 0 auto;
 }
 
+header .btn-contato button, .hero-site button {
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
 /* HEADER */
 
 header {
     width: 100%;
     padding: 40px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .interface {
@@ -45,14 +57,59 @@ header .menu-desktop nav ul {
 .menu-desktop nav ul li a {
     color: white;
     text-decoration: none;
+    display: inline-block;
+    transition: .4s;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.1);
 }
 
 header .btn-contato button {
     width: 140px;
     height: 50px;
-    font-size: 18px;
-    background-color: transparent;
-    border: 1px solid white;
+}
+
+header .btn-contato button:hover, .hero-site button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* HERO */
+
+section.hero-site {
+    height: 95vh;
+    background-image: url(../images/bg-inicio-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white;
-    cursor: pointer;
+}
+
+.hero-site .interface {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 4em;
+    font-weight: 200;
+    line-height: 70px;
+}
+
+.hero-site .txt-hero h1 span {
+    font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0px;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
 }
