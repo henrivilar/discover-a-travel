@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #E3E3E3;
 }
 
 .interface {
@@ -112,4 +112,32 @@ section.hero-site {
     width: 220px;
     height: 60px;
     font-size: 20px;
+}
+
+/* VANTAGENS */
+
+section.vantagens {
+    padding: 80px 0px;
+}
+
+.vantagens .itens-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.vantagens .itens-conteiner .img-itens img {
+    max-width: 480px;
+}
+
+.vantagens .itens-conteiner .txt-itens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-conteiner .txt-itens h3 span {
+    font-weight: 300;
 }
